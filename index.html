@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aperture</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="media-queries.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header-container">
         <img src="./images/icons/logo.svg" alt="Логотип" class="header__logo" />
         <nav class="header__nav">
           <ul class="header__list">
@@ -24,7 +29,7 @@
     </header>
     <main class="main">
       <section class="welcome">
-        <div class="container">
+        <div class="welcome-container">
           <div class="welcome__text">
             <h4 class="welcome__subtitle">photographer & filmmaker</h4>
             <h1 class="welcome__title">Aperture Studios</h1>
@@ -46,7 +51,7 @@
         </div>
       </section>
       <section class="product">
-        <div class="container">
+        <div class="product-container">
           <div class="product__text">
             <h3 class="product__name">What we do.</h3>
             <p class="product__areas">The areas that we're specialized in.</p>
@@ -92,7 +97,7 @@
         </div>
       </section>
       <section class="footage">
-        <div class="container">
+        <div class="footage-container">
           <div class="footage__text">
             <h4 class="footage__title">Sunset at Mount Fuji</h4>
             <p class="footage__desc">
@@ -110,7 +115,7 @@
         </div>
       </section>
       <section class="tools">
-        <div class="container">
+        <div class="tools-container">
           <div class="tools__text">
             <h4 class="tools__subtitle">The Gear cage</h4>
             <h2 class="tools__title">The tools that we use.</h2>
@@ -134,7 +139,7 @@
         </div>
       </section>
       <section class="snapshot">
-        <div class="container">
+        <div class="snapshot-container">
           <div class="snapshot__text">
             <h4 class="snapshot__title">Sunset at Mount Fuji</h4>
             <p class="snapshot__desc">
@@ -148,6 +153,60 @@
             <svg class="list__aperture"></svg><a href="#!">f/16</a>
             <svg class="list__ISO"></svg><a href="#!">400</a>
             <svg class="list__location"></svg><a href="#!">Japan</a>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer__desc">
+            <img
+              src="./images/icons/logo.svg"
+              alt="Логотип"
+              class="footer__logo"
+            />
+            <p class="footer__desc">
+              Photographers & videographers capturing the world around us.
+            </p>
+          </div>
+          <figure class="footer__business-areas">
+            <figcaption>Business areas</figcaption>
+            <ul>
+              <li><a href="#!">Product Photography</a></li>
+              <li><a href="#!">Architecture Photography</a></li>
+              <li><a href="#!">Drone Photography</a></li>
+              <li><a href="#!">Wildlife Photography</a></li>
+            </ul>
+          </figure>
+          <figure class="footer__pages">
+            <figcaption>Pages</figcaption>
+            <ul>
+              <li><a href="#!">Gear cage</a></li>
+              <li><a href="#!">Featured images</a></li>
+              <li><a href="#!">Contact</a></li>
+              <li><a href="#!">Style guide</a></li>
+              <li><a href="#!">Instructions</a></li>
+              <li><a href="#!">Changelog</a></li>
+            </ul>
+          </figure>
+          <div class="footer__subscribe">
+            <h4 class="footer__title">Subscribe to our newsletter</h4>
+
+            <div class="footer__copyright">
+              <form>
+                <input type="text" placeholder="Write to us" />
+                <button type="submit"></button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__social">
+            <p class="footer__social-desc">
+              © Aperture Photography, Inc. All rights reserved. Licensing.
+            </p>
+            <div class="footer__social-icons">
+              <a href="#!"><img src=./images/icons/twitter.svg></a>
+              <a href="#!"><img src="./images/icons/instagram.svg" /></a>
+              <a href="#!"><img src="./images/icons/facebook.svg" /></a>
+            </div>
           </div>
         </div>
       </section>
