@@ -7,21 +7,23 @@
     <title>Aperture</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="media-queries.css" rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
     <header class="header">
       <div class="header-container">
         <img src="./images/icons/logo.svg" alt="Логотип" class="header__logo" />
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li><a class="active" href="#!">Business areas</a></li>
-            <li><a href="#!">Featured images</a></li>
-            <li><a href="#!">Gear cage</a></li>
-            <li><a href="#!">Contact</a></li>
+        <nav class="header-container__nav">
+          <ul class="header-container__list">
+            <li>
+              <a class="header-container__item_active" href="#!"
+                >Business areas</a
+              >
+            </li>
+            <li>
+              <a class="header-container__item" href="#!">Featured images</a>
+            </li>
+            <li><a class="header-container__item" href="#!">Gear cage</a></li>
+            <li><a class="header-container__item" href="#!">Contact</a></li>
           </ul>
         </nav>
         <a href="#!" class="header__btn">Get template</a>
@@ -30,10 +32,12 @@
     <main class="main">
       <section class="welcome">
         <div class="welcome-container">
-          <div class="welcome__text">
-            <h4 class="welcome__subtitle">photographer & filmmaker</h4>
-            <h1 class="welcome__title">Aperture Studios</h1>
-            <p class="welcome__desc">
+          <div class="welcome-container__text">
+            <h4 class="welcome-container__subtitle">
+              photographer & filmmaker
+            </h4>
+            <h1 class="welcome-container__title">Aperture Studios</h1>
+            <p class="welcome-container__desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros elementum tristique. Duis cursus,
               mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
@@ -52,31 +56,36 @@
       </section>
       <section class="product">
         <div class="product-container">
-          <div class="product__text">
-            <h3 class="product__name">What we do.</h3>
-            <p class="product__areas">The areas that we're specialized in.</p>
+          <div class="product-container__text">
+            <h3 class="product-container__name">What we do.</h3>
+            <p class="product-container__areas">
+              The areas that we're specialized in.
+            </p>
           </div>
-          <div class="product__card card-photography">
-            <h4 class="product__title">Product Photography</h4>
-            <p class="product__desc">
+          <div class="product-container__card">
+            <img src="./images/product areas1.jpg" />
+            <h4 class="product-container__title">Product Photography</h4>
+            <p class="product-container__desc">
               Cras commodo consequat orci, in convallis risus egestas non. Nulla
               efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero
               ac, cursus quam.
             </p>
             <a href="#!" class="btn">Read more</a>
           </div>
-          <div class="product__card card-architecture">
-            <h4 class="product__title">Architecture Photography</h4>
-            <p class="product__desc">
+          <div class="product-container__card">
+            <img src="./images/product areas2.jpg" />
+            <h4 class="product-container__title">Architecture Photography</h4>
+            <p class="product-container__desc">
               Aenean porta neque eget consequat fringilla. Vestibulum ultrices,
               orci nec egestas pharetra, nec auctor sapien leo nec purus. Fusce
               tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.
             </p>
             <a href="#!" class="btn">Read more</a>
           </div>
-          <div class="product__card card-drone">
-            <h4 class="product__title">Drone Photography</h4>
-            <p class="product__desc">
+          <div class="product-container__card">
+            <img src="./images/product areas3.jpg" />
+            <h4 class="product-container__title-up">Drone Photography</h4>
+            <p class="product-container__desc">
               Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
               Duis tristique sed lorem a vestibulum. Cras commodo consequat
               orci, in convallis risus egestas non. Nulla efficitur auctor
@@ -84,9 +93,10 @@
             </p>
             <a href="#!" class="btn">Read more</a>
           </div>
-          <div class="product__card card-wildlife">
-            <h4 class="product__title">Wildlife Photography</h4>
-            <p class="product__desc">
+          <div class="product-container__card">
+            <img src="./images/product areas4.jpg" />
+            <h4 class="product-container__title-up">Wildlife Photography</h4>
+            <p class="product-container__desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros
               quis consectetur. Morbi neque ex, condimentum dapibus congue et,
@@ -98,9 +108,9 @@
       </section>
       <section class="footage">
         <div class="footage-container">
-          <div class="footage__text">
-            <h4 class="footage__title">Sunset at Mount Fuji</h4>
-            <p class="footage__desc">
+          <div class="footage-container__text">
+            <h4 class="footage-container__title">Sunset at Mount Fuji</h4>
+            <p class="footage-container__desc">
               Duis tristique sed lorem a vestibulum. Cras commodo consequat
               orci, in convallis risus egestas non.
             </p>
@@ -114,12 +124,13 @@
           </div>
         </div>
       </section>
+
       <section class="tools">
         <div class="tools-container">
-          <div class="tools__text">
-            <h4 class="tools__subtitle">The Gear cage</h4>
-            <h2 class="tools__title">The tools that we use.</h2>
-            <p class="tools__desc">
+          <div class="tools-container__text">
+            <h4 class="tools-container__subtitle">The Gear cage</h4>
+            <h2 class="tools-container__title">The tools that we use.</h2>
+            <p class="tools-container__desc">
               The say that "no place is boring if you've had a good night's
               sleep and have a pocket full of unexposed film". While we don't
               shoot (a lot) of film these days — these are the tools that we
@@ -127,7 +138,7 @@
             </p>
             <a href="#!" class="btn">Check it out</a>
           </div>
-          <div class="tools__foto">
+          <div class="tools-container__foto">
             <div class="list">
               <svg class="list__zoom"></svg>
               <a href="#!">0,8"</a>
@@ -140,11 +151,11 @@
       </section>
       <section class="snapshot">
         <div class="snapshot-container">
-          <div class="snapshot__text">
-            <h4 class="snapshot__title">Sunset at Mount Fuji</h4>
-            <p class="snapshot__desc">
-              Duis tristique sed lorem a vestibulum. Cras commodo consequat
-              orci, in convallis risus egestas non.
+          <div class="snapshot-container__text">
+            <h4 class="snapshot-container__title">Monstera Leafs</h4>
+            <p class="snapshot-container__desc">
+              Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
+              ultrices, ut faucibus orci tincidunt.
             </p>
           </div>
           <div class="list">
@@ -158,51 +169,77 @@
       </section>
       <section class="footer">
         <div class="footer-container">
-          <div class="footer__desc">
+          <div class="footer-container__desc">
             <img
               src="./images/icons/logo.svg"
               alt="Логотип"
-              class="footer__logo"
+              class="footer-container__logo"
             />
-            <p class="footer__desc">
+            <p class="footer-container__desc">
               Photographers & videographers capturing the world around us.
             </p>
           </div>
-          <figure class="footer__business-areas">
-            <figcaption>Business areas</figcaption>
+          <figure class="footer-container__business-areas">
+            <figcaption class="footer-container__figcaption">
+              Business areas
+            </figcaption>
             <ul>
-              <li><a href="#!">Product Photography</a></li>
-              <li><a href="#!">Architecture Photography</a></li>
-              <li><a href="#!">Drone Photography</a></li>
-              <li><a href="#!">Wildlife Photography</a></li>
+              <li>
+                <a class="footer-container__item" href="#!"
+                  >Product Photography</a
+                >
+              </li>
+              <li>
+                <a class="footer-container__item" href="#!"
+                  >Architecture Photography</a
+                >
+              </li>
+              <li>
+                <a class="footer-container__item" href="#!"
+                  >Drone Photography</a
+                >
+              </li>
+              <li>
+                <a class="footer-container__item" href="#!"
+                  >Wildlife Photography</a
+                >
+              </li>
             </ul>
           </figure>
-          <figure class="footer__pages">
-            <figcaption>Pages</figcaption>
+          <figure class="footer-container__pages">
+            <figcaption class="footer-container__figcaption">Pages</figcaption>
             <ul>
-              <li><a href="#!">Gear cage</a></li>
-              <li><a href="#!">Featured images</a></li>
-              <li><a href="#!">Contact</a></li>
-              <li><a href="#!">Style guide</a></li>
-              <li><a href="#!">Instructions</a></li>
-              <li><a href="#!">Changelog</a></li>
+              <li><a class="footer-container__item" href="#!">Gear cage</a></li>
+              <li>
+                <a class="footer-container__item" href="#!">Featured images</a>
+              </li>
+              <li><a class="footer-container__item" href="#!">Contact</a></li>
+              <li>
+                <a class="footer-container__item" href="#!">Style guide</a>
+              </li>
+              <li>
+                <a class="footer-container__item" href="#!">Instructions</a>
+              </li>
+              <li><a class="footer-container__item" href="#!">Changelog</a></li>
             </ul>
           </figure>
-          <div class="footer__subscribe">
-            <h4 class="footer__title">Subscribe to our newsletter</h4>
+          <div class="footer-container__subscribe">
+            <h4 class="footer-container__title">Subscribe to our newsletter</h4>
 
-            <div class="footer__copyright">
-              <form>
+            <div class="footer-container__copyright">
+              <form class="footer-container__copyright_action" href="#!">
                 <input type="text" placeholder="Write to us" />
-                <button type="submit"></button>
+                <button>
+                  <a href="#!"><img src="./images/icons/btn icon.svg" /></a>
+                </button>
               </form>
             </div>
           </div>
-          <div class="footer__social">
-            <p class="footer__social-desc">
+          <div class="footer-container__social">
+            <p class="footer-container__social-desc">
               © Aperture Photography, Inc. All rights reserved. Licensing.
             </p>
-            <div class="footer__social-icons">
+            <div class="footer-container__social-icons">
               <a href="#!"><img src="./images/icons/twitter.svg" /></a>
               <a href="#!"><img src="./images/icons/instagram.svg" /></a>
               <a href="#!"><img src="./images/icons/facebook.svg" /></a>
